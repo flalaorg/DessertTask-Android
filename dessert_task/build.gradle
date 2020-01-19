@@ -28,7 +28,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:appcompat-v7:$android_support_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
@@ -41,4 +41,5 @@ project.ext {
     mavGitUrl = mavSiteUrl + ".git"
     mavProjectName = "DessertTask-Android"
     mavLibraryDescription = "easy start task in application in different threads"
+    mavPluginVersion = '1.0.3'
 }

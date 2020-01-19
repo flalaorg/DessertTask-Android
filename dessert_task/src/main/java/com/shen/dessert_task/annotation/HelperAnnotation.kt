@@ -12,7 +12,11 @@ annotation class Executors {
     }
 }
 
-@IntDef(value = [Priorities.THREAD_PRIORITY_FOREGROUND, Priorities.THREAD_PRIORITY_BACKGROUND, Priorities.THREAD_PRIORITY_LOWEST])
+@IntDef(value = [
+    Priorities.THREAD_PRIORITY_FOREGROUND.toLong(),
+    Priorities.THREAD_PRIORITY_BACKGROUND.toLong(),
+    Priorities.THREAD_PRIORITY_LOWEST.toLong()
+])
 @Retention(AnnotationRetention.SOURCE)
 annotation class Priorities {
     companion object {
